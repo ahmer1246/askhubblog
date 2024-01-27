@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 68.5%;
+}
+:root{
+    --primary:	#1877F2;
+}
+/* ****** For Navbar ****** */
+
+.navbar{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.5em;
+    padding: 0em 12em;
+}
+
+.logo{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: white;
+}
+#logOutBtn  a{
+    padding: 0.5em;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+#logOutBtn a:hover{
+    color: black;
+}
+
+
+/* ****** For Hero Section ****** */
+.heroSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7em 2em;
+}
+
+/* ****** For Main Write Box ****** */
+.writeBox{
+    width: 120em;
+    padding: 2em;
+    
+}
+.headingBox{
+    border-bottom: 0.3em solid var(--primary);
+    padding-bottom: 1em;
+}
+.headingBox h1{
+    font-size: 2.6em;
+}
+.innerWrite{
+    display: flex;
+    flex-wrap: wrap;
+    width: 116em;
+    margin-top: 2em;
+}
+
+/* ****** For Left Title Box ****** */
+.title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 5em;
+    gap: 7em;
+    font-size: 1.1em;
+
+}
+.innerTitle input{
+    padding: 0.8em 1em;
+    width: 30em;
+    margin-top: 0.5em;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    border-radius: 0.5em;
+    background-color:#d1d1d1;
+}
+.title .type p {
+font-size: 1.4em;
+margin-top: 0.5em;
+padding: 0em 0.5em;
+display: inline-block;
+}
+
+/* ****** For Right Category Box ****** */
+.category{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 5em;
+    font-size: 1.1em;
+    gap: 7em;
+
+}
+.category .status p {
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    display: inline-block;
+    padding: 0em 0.5em;
+    }
+.innerCate .selection{
+    margin-top: 0.5em;
+}
+.selection{
+    width: 30em;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    background-color:#d1d1d1;
+    border-radius: 0.5em;
+}
+
+/* ****** For Description Box ****** */
+.descrip{
+    width: 100%;
+    margin-top: 01em;
+    padding: 5em;
+
+}
+.descrip h1{
+    padding-bottom: 1em;
+}
+.descrip textarea{
+    width: 100%;
+    margin-bottom: 1.6em;
+    background-color: #d1d1d1;
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1.4em;
+}
+
+/* ****** For Buttons  ****** */
+.buttons{
+    padding: 0em 6em ;
+    display: flex;
+    gap:1.9em;
+}
+.buttons button{
+    padding: 0.5em 0.8em;
+    font-size: 1.6em;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: black;
+    color: var(--primary);
+}
+
+
+
+
+@media only screen and (max-width:1325px){
+    
+    html{
+        font-size: 62%;
+    }
+    .writeBox{
+        width: 110em;
+        padding: 2em;
+        
+    }
+    .descrip{
+        width: 90%;
+        margin-top: 01em;
+        padding: 5em;
+    
+    }
+}
+
+@media only screen and (max-width:1107px){
+    
+    html{
+        font-size: 58%;
+    }
+   
+    .writeBox{
+        width: 100%;
+        padding: 2em;
+        
+    }
+    .navbar{
+        width: 100%;
+    }
+    .innerWrite{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 2em;
+    }
+    .descrip{
+        width: 87%;
+        margin-top: 01em;
+        padding: 5em;
+    
+    }
+    .category{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.2em 4em;
+        font-size: 1em;
+        gap: 7em;
+    
+    }
+    .selection{
+        width: 20em;
+        padding: 0.4em 0.5em;
+        border: none;
+        outline: none;
+        background-color:#d1d1d1;
+        border-radius: 0.5em;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:815px) {
+    
+    html{
+        font-size: 54%;
+    }
+    .selection{
+        width: 16em;
+        padding: 0.4em 0.4em;
+        border: none;
+        outline: none;
+        background-color:#d1d1d1;
+        border-radius: 0.5em;
+    }
+    .innerTitle input{
+        padding: 0.9em 1em;
+        width: 23em;
+        margin-top: 0.5em;
+        outline: none;
+        border: none;
+        font-size: 1em;
+        border-radius: 0.5em;
+        background-color:#d1d1d1;
+    }
+    
+}
+
+
+@media only screen and (max-width:630px) {
+    
+    html{
+        font-size: 50%;
+    }
+    .selection{
+        width: 15em;
+        padding: 0.4em 0.5em;
+        border: none;
+        outline: none;
+        background-color:#d1d1d1;
+        border-radius: 0.5em;
+    }
+    .innerTitle input{
+        padding: 0.9em 1em;
+        width: 20em;
+        margin-top: 0.5em;
+        outline: none;
+        border: none;
+        font-size: 1em;
+        border-radius: 0.5em;
+        background-color:#d1d1d1;
+    }
+    
+}
+@media only screen and (max-width:583px) {
+    .logo{
+        font-size: 1em;
+        text-transform: uppercase;
+        color: white;
+    }
+    #logOutBtn  a{
+        padding: 0.4em;
+        font-size: 1em;
+        outline: none;
+        border: none;
+        font-weight: 300;
+        text-decoration: none;
+        color: var(--primary);
+        background-color: white;
+        border-radius: 0.3em;
+        cursor: pointer;
+    }
+    
+.innerWrite{
+    display: flex;
+    flex-direction: column;
+}
+    
+}
+
+@media only screen and (max-width:390px) {
+    html{
+        font-size: 45%;
+    }
+    .logo{
+        font-size: 0.8em;
+        text-transform: uppercase;
+        color: white;
+    }
+    #logOutBtn  a{
+        padding: 0.3em;
+        font-size: 0.8em;
+        outline: none;
+        border: none;
+        font-weight: 300;
+        text-decoration: none;
+        color: var(--primary);
+        background-color: white;
+        border-radius: 0.3em;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width:310px) {
+    html{
+        font-size: 40%;
+    }
+    .logo{
+        font-size: 0.7em;
+        text-transform: uppercase;
+        color: white;
+    }
+    #logOutBtn  a{
+        padding: 0.3em;
+        font-size: 0.7em;
+        outline: none;
+        border: none;
+        font-weight: 200;
+        text-decoration: none;
+        color: var(--primary);
+        background-color: white;
+        border-radius: 0.3em;
+        cursor: pointer;
+    }
+    .selection{
+        width: 14em;
+        padding: 0.4em 0.5em;
+        border: none;
+        outline: none;
+        background-color:#d1d1d1;
+        border-radius: 0.5em;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:280px) {
+    html{
+        font-size: 35%;
+    }
+    .selection{
+        width: 10em;
+        padding: 0.2em 0.3em;
+        border: none;
+        outline: none;
+        background-color:#d1d1d1;
+        border-radius: 0.5em;
+    }
+    .innerTitle input{
+        padding: 0.9em 1em;
+        width: 20em;
+        margin-top: 0.5em;
+        outline: none;
+        border: none;
+        font-size: 1em;
+        border-radius: 0.5em;
+        background-color:#d1d1d1;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:237px) {
+    html{
+        font-size: 30%;
+    }
+}

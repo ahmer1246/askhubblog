@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 68.5%;
+}
+:root{
+    --primary:	#1877F2;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+   
+}
+.formBox{
+    padding: 3em;
+    border: 0.2em solid var(--primary);
+    box-shadow: 0.2em 0.2em 0.1em 0.1em var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.7em;
+    /* background-color: var(--primary); */
+ }
+
+.formBox div{
+    margin: 1em 0em;
+    
+}
+.formBox h1{
+    font-size: 3.4em;  
+    color: var(--primary);
+}
+.fname , .lname , .password , .email {
+    width: 34em;
+    font-size: 1.5em;
+
+}
+.fname p{
+    margin-bottom: 1.4em;
+}
+.lname p{
+    margin-bottom: 1.4em;
+}
+.email p{
+    margin-bottom: 1.4em;
+}
+
+.fname input , .lname input , .email input , .password input{
+ width: 100%;
+ padding: 0.8em;
+ outline: none;
+ border: none;
+ background-color: #d1d1d1;
+}
+.password .inp{
+    display: flex;
+    position: relative;
+}
+.password .inp i{
+    position: absolute;
+    right: 0.7em;
+    bottom: 01em;
+}
+
+
+
+
+.sUpWithGo{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup input{
+    font-size: 1.8em;
+    padding: 0.46em 0.7em;
+    background-color:var(--primary);
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+}
+.signup input:hover{
+    background-color: black;
+    color: var(--primary);
+}
+.signup{
+    width: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.supinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    border: 0.2em solid var(--primary);
+    padding: 0.7em 1em;
+    border-radius: 0.5em;
+}
+.supinner button{
+    background:none;
+    outline: none;
+    border: none;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.supinner:hover{
+    background-color: var(--primary);
+    color: black;
+
+}
+.sUpWithGo i{
+    color: red;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+    html{
+        font-size: 62%;
+    }
+}
+@media only screen and (max-width:1000px) {
+    html{
+        font-size: 58%;
+    }
+}
+@media only screen and (max-width:800px) {
+    html{
+        font-size: 54%;
+    }
+}
+@media only screen and (max-width:600px) {
+    html{
+        font-size: 48%;
+    }
+}
+@media only screen and (max-width:520px) {
+    html{
+        font-size: 42%;
+    }
+}
+@media only screen and (max-width:480px) {
+    html{
+        font-size: 35%;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       
+    }
+}
+@media only screen and (max-width:350px) {
+    html{
+        font-size: 27%;
+    }
+}
+@media only screen and (max-width:270px) {
+    html{
+        font-size: 23%;
+    }
+}
+@media only screen and (max-width:230px) {
+    html{
+        font-size: 20%;
+    }
+}
+@media only screen and (max-width:205px) {
+    html{
+        font-size: 18%;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+       
+    }
+}

@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 68.5%;
+}
+:root{
+    --primary:	#1877F2;
+}
+/* ****** For Navbar ****** */
+
+.navbar{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.5em;
+    padding: 0em 12em;
+}
+
+.logo{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: white;
+}
+#logOutBtn  a{
+    padding: 0.5em;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+#logOutBtn a:hover{
+    color: black;
+}
+
+#writeBtn a {
+    padding: 0.5em;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 0.3em;
+    cursor: pointer;
+    
+}
+#writeBtn a:hover{
+    color: black;
+}
+
+
+.postBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 8em 2em;
+}
+.posts{
+    width: 120em;
+    border: 0.2em solid var(--primary);
+    border-radius: 0.7em;
+    padding: 4em 4em;
+}
+.posts .head{
+  /* padding: 2em 4em; */
+
+}
+.head h1{
+    padding-bottom: 1em;
+    font-size: 3em;
+}
+.head p{
+    font-size: 1.4em;
+    padding: 0.8em 0em;
+}
+.nameAndDate{
+    margin: 5em 4em;
+    display: flex;
+    justify-content: space-between;
+}
+.nameAndDate .name p a {
+    text-decoration: none;
+    font-size: 1.7em;
+    display: flex;
+    gap: 0.7em;
+    color: black;
+}
+.nameAndDate  .date p{
+    font-size: 1.7em;
+}
+.replyBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+.replyBox .heading{
+    display: flex;
+    gap: 8em;
+    margin: 2em;
+}
+.replyBox .heading h1{
+   font-size: 1.8em;
+}
+.replyBox textarea{
+    background-color: #d1d1d1;
+    outline: none;
+    border: none;
+    padding: 1.7em;
+    font-size: 1.5em;
+    border-radius: 0.7em;
+}
+.replyBox input{
+    width: 7em;
+    padding: 0.5em;
+    font-size: 1.7em;
+    margin: 2em 0em;
+    border-radius: 0.5em;
+    background-color: #1877F2;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.replyBox input:hover{
+    background-color: black;
+    color: #1877F2;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+.showReply{
+    margin-top: 3em;
+}
+.user{
+    margin-top: 3em;
+}
+ .user .detail{
+display: flex;
+align-items: center;
+gap: 1em;
+padding-bottom: 2em;
+
+}
+.user .detail p{
+    font-size: 1.5em;
+}
+.user .detail img{
+    width: 4em;
+    border-radius: 50%;
+}
+.user .comment{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+.user .like{
+    font-size: 1.8em;
+}

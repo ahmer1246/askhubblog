@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Hub Blog</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/593dce717e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- For main box  -->
+    <div class="main">
+      <!-- for Navabar  -->
+      <div class="navbar">
+        <div class="logo"><h1>Ask Hub Blog</h1></div>
+        <div class="logoutbox">
+          <button id="logOutBtn"><a href="">Logout</a></button>
+        </div>
+      </div>
+
+      <!-- for blog content  -->
+      <div class="heroSec">
+        <!-- for main write box -->
+        <div class="writeBox">
+          <div class="headingBox">
+            <h1 id="heading">Create Blog Or Ask Question</h1>
+          </div>
+          <div class="innerWrite">
+            <!-- for tilte left side  -->
+
+            <div class="title">
+              <div class="innerTitle">
+                <h1>Title</h1>
+                <input type="text" placeholder="Enter Title" />
+              </div>
+              <div class="type">
+                <h1>Select Type</h1>
+                <p><input type="radio" /> Blog</p>
+                <p><input type="radio" /> Question</p>
+              </div>
+            </div>
+
+            <!-- for Category Selection right box -->
+
+            <div class="category">
+              <div class="innerCate">
+                <h1>Select Category</h1>
+                <select name="" id="" class="selection">
+                  <option value="">Select Category</option>
+                  <option value="">HTML</option>
+                  <option value="">CSS</option>
+                  <option value="">JAVASCRIPT</option>
+                  <option value="">React Js</option>
+                </select>
+              </div>
+              <div class="status">
+                <h1>Select Status</h1>
+                <p><input type="radio" /> Active</p>
+                <p><input type="radio" /> In Active</p>
+              </div>
+            </div>
+
+            <!-- for Description box -->
+            <div class="descrip">
+              <h1>Description</h1>
+              <textarea
+                name=""
+                id=""
+                cols="40"
+                rows="10"
+                placeholder="Enter Text "
+              ></textarea>
+            </div>
+
+            <!-- for Button Box -->
+
+            <div class="buttons">
+              <button>Save</button>
+              <button>Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

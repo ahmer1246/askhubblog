@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 68.5%;
+}
+:root{
+    --primary:	#1877F2;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 7em;
+    background-color: var(--primary);
+}
+.logo{
+    font-size: 2.7em;
+    text-transform: uppercase;
+    color: white;
+}
+.searchBar{
+    width: 60em;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+#search{
+    width: 93%;
+    padding: 0.65em 1em;
+    border: none;
+    outline: none;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+#searchBtn{
+    font-size: 2em;
+    padding: 0.26em;
+    width: 7%;
+    background-color: #dfd6d6;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #1877F2;
+    border-top-right-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+}
+#searchBtn:hover{
+    color: black;
+}
+#askBtn a{
+    padding: 0.5em;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+#askBtn a:hover{
+    color: black;
+}
+#loginBtn a{
+    padding: 0.5em 0.7em;
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+#loginBtn a:hover{
+    color: black;
+}
+
+
+.postSec{
+
+    padding: 7em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+.postBox{
+    display: flex;
+    /* width: 120em; */
+    align-items: center; 
+  
+    flex-wrap: wrap;
+   border: 0.2em solid var(--primary);
+    padding: 2em 3em;
+    border-radius: 1em;
+
+
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 70%;
+    
+}
+.text h1 {
+    font-size: 2.8em;
+    text-decoration: none;
+}
+.text h1 a{
+    text-decoration: none;
+    color: black;
+}
+.text p{
+ font-size: 1.4em;
+ padding: 1em 0em;
+}
+.text p a{
+    text-decoration: none;
+    color: black;
+}
+.image{
+    width: 30%;
+  
+}
+.image img{
+    width: 100%;
+}
+.nameDate{
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 6em;
+   
+}
+.nameDate p{
+    font-size: 1.4em;
+    margin-top: 1em;
+}
+
+.name p a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 0.8em;
+}
+.nameDate .date{
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+footer{
+    margin-top: 3em;
+}
+
+.foot{
+    background-color: #1877F2;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.foot .left {
+    width: 50%;
+    text-align: center;
+    padding: 3em;
+}
+.foot .left h1{
+    font-size: 3em;
+    color: white;
+}
+.foot .right{
+    width: 50%;
+    padding: 3em;
+}
+.foot .right li {
+    font-size: 1.6em;
+    list-style: none;
+    color: white;
+}
+.foot .bottom{
+    padding: 1em;
+    text-align: center;
+    font-size: 1.7em;
+    background-color: black;
+    color: #1877F2;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only  screen  and (max-width:1117px){
+    htmL{
+        font-size: 58.5%;
+    } 
+    .searchBar{
+        width: 55em;
+    }
+    .logo{
+        font-size: 2.5em;
+    }
+    #searchBtn{
+        font-size:2.4em;
+        padding: 0.24em;
+        width: 7%;
+        background-color: #dfd6d6;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #1877F2;
+       
+    }
+}
+
+
+
+@media only  screen  and (max-width:900px){
+
+
+
+    .searchBar{
+        width: 52em;
+    }
+    #askBtn a{
+        padding: 0.4em;
+        font-size: 1em;
+        font-weight: 400;
+     
+       
+    }
+    #loginBtn a{
+        padding: 0.4em 0.6em;
+        font-size: 1em;
+        font-weight: 400;
+     
+    }
+
+    
+    /* #askBtn a{
+        padding: 0.5em;
+        font-size: 1.3em;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--primary);
+        background-color: white;
+        border-radius: 0.3em;
+        cursor: pointer;
+    } */
+
+
+}
+
+
+@media only  screen  and (max-width:830px){
+    .searchBar{
+        width: 37em;
+    }
+    #searchBtn{
+        font-size:2em;
+        padding: 0.38em;
+        width: 7%;
+       
+    }
+}
+@media only  screen  and (max-width:752px){
+    .postBox{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .text{
+        width: 100%;
+    }
+    .nameDate{
+        width: 100%;
+    }
+}
+
+@media only  screen  and (max-width:738px){
+   
+    html{
+        font-size: 53%;
+    }
+    .searchBar{
+        width: 35em;
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+    }
+    #search{
+        width: 93%;
+        padding: 0.53em 0.7em;
+        border: none;
+        outline: none;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
+    }
+    #searchBtn{
+        font-size:2em;
+        padding: 0.38em ;
+        width: 8%;
+       
+    }
+}
+
+@media only  screen  and (max-width:618px){
+   
+    html{
+        font-size: 42%;
+    }
+    #search{
+        width: 93%;
+        padding: 0.28em 0.7em;
+    }
+    }
+
+    @media only  screen  and (max-width:618px){
+   
+        html{
+            font-size: 42%;
+        }
+        .logo{
+            font-size: 1.9em;
+        }
+        .searchBar{
+            width: 26em;
+        }
+        #search{
+            width: 90%;
+            padding: 0.28em 0.7em;
+        }
+        #askBtn a{
+            padding: 0.3em;
+            font-size: 0.8em;
+            font-weight: 300;
+         
+           
+        }
+        #loginBtn a{
+            padding: 0.3em 0.5em;
+            font-size: 0.8em;
+            font-weight: 300;
+         
+        }
+        #searchBtn{
+            font-size:2em;
+            padding: 0.38em 0.8em ;
+            width:10%;
+           
+        }
+    
+        }
+
+
+
+        @media only  screen  and (max-width:428px){
+   
+            html{
+                font-size: 35%;
+            }
+            .logo{
+                font-size: 1.9em;
+            }
+            .searchBar{
+                width: 16em;
+            }
+            #search{
+                width: 90%;
+                padding: 0.2em 0.5em;
+                text-align: center;
+            }
+            #askBtn a{
+                padding: 0.2em;
+                font-size: 0.6em;
+                font-weight: 300;
+                outline:none;
+                border: none;
+             
+               
+            }
+            #loginBtn a{
+                padding: 0.2em 0.4em;
+                font-size: 0.6em;
+                font-weight: 200;
+                outline:none;
+                border: none;
+             
+            }
+            #searchBtn{
+                font-size:2em;
+                padding: 0.45em 0.8em ;
+                width:10%;
+               
+            }
+        
+            }
+
+            @media only  screen  and (max-width:279px){
+   
+                html{
+                    font-size: 28%;
+                }
+                #search{
+                    width: 90%;
+                    padding: 0.3em 0.6em;
+                    text-align: center;
+                }
+                #search{
+                    width: 90%;
+                    padding: 0.05em 0.3em;
+                    text-align: center;
+                }
+                #askBtn a{
+                    padding: 0.15em;
+                    font-size: 0.5em;
+                    font-weight: 300;
+                    outline:none;
+                    border: none;
+                 
+                   
+                }
+                #loginBtn a{
+                    padding: 0.15em 0.3em;
+                    font-size: 0.5em;
+                    font-weight: 100;
+                    outline:none;
+                    border: none;
+                 
+                }
+            }
